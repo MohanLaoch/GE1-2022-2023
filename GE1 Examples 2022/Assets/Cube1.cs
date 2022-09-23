@@ -14,5 +14,9 @@ public class Cube1 : MonoBehaviour
     void Update()
     {
         transform.Translate(0, 0, 1);
+        
+        Color newColor = new Color( Random.value, Random.value, Random.value, 1.0f );
+        
+        GetComponent<Renderer>().material.color = newColor;
     }
 }
