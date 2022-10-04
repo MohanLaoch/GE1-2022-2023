@@ -140,7 +140,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d4efde99ce5ebc48a8d7739eadb367f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  meshRenderer: {fileID: 548278292}
   speed: 90
+  lerpTime: 0
+  lerpColors:
+  - {r: 0.13171947, g: 0.2251962, b: 0.754717, a: 0}
+  - {r: 0.13710396, g: 0.67557716, b: 0.745283, a: 0}
+  - {r: 0.16941082, g: 0.764151, b: 0.19835955, a: 0}
+  - {r: 0.764151, g: 0.74021333, b: 0.09011213, a: 0}
+  - {r: 0.8867924, g: 0.3859856, b: 0.071110725, a: 0}
+  - {r: 0.735849, g: 0.11840629, b: 0.10065861, a: 0}
+  - {r: 0.7372549, g: 0.10196077, b: 0.5353333, a: 0}
+  - {r: 0.4228695, g: 0.10196077, b: 0.7372549, a: 0}
+--- !u!23 &548278292 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -7511558181221131132, guid: 58812e26813381a43be492250ef3dcad, type: 3}
+  m_PrefabInstance: {fileID: 1827983142}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1090498049
 GameObject:
   m_ObjectHideFlags: 0
