@@ -4,32 +4,41 @@ using UnityEngine;
 
 public class Generator : MonoBehaviour
 {
-    //public int loops = 10;
+    public int loops = 10;
     public GameObject prefab;
     // Start is called before the first frame update
     void Start()
     {
-        /*for (var i = 0; i < 10; i++)
-        {
-            Instantiate(prefab, new Vector3(i * 2.0f, 0, 0), Quaternion.identity);
-        }*/
-
-        Vector3 targetPosition = Vector3.zero;
+        //Vector3 targetPosition = Vector3.zero;
         
-        for (var i = 0; i < 10; i++)
+        for (var j = 0; j < loops; j++)
         {
-            GameObject instance = Instantiate(prefab);
+            float radius = 2f * j;
 
-            float angle = i * (2 * 3.14f / 10);
+            int circumference = (int) (2 * Mathf.PI * radius);
 
-            float x = Mathf.Cos(angle) * 1.5f;
-            float y = Mathf.Sin(angle) * 1.5f;
+            for (var i = 0; i < circumference; i++)
+            {
+                float cx = transform.position.x;
+                float cy = transform.position.y;
 
-            targetPosition = new Vector3(targetPosition.x + x, targetPosition.y + y, 0);
+                float angle = (2 * Mathf.PI / circumference) * i;
+                
+                float x = cx + radius * Mathf.Cos(angle);
+                float y = cy + radius * Mathf.Sin(angle);
+                
+                GameObject instance = Instantiate(prefab);
 
-            instance.transform.position = targetPosition;
+                instance.transform.position = new Vector3(x, y, 0);
+
+                //targetPosition = new Vector3(targetPosition.x + x, targetPosition.y + y, 0);
+
+                //instance.transform.position = targetPosition;
+            }
         }
+        
     }
+    
 
     // Update is called once per frame
     void Update()
