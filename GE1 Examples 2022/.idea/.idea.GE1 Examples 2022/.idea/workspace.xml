@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="11397f76-0ab9-4d6f-9853-6d5122e90b07" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.GE1 Examples 2022/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GE1 Examples 2022/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Generator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Generator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Lab1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Lab1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2022.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2022.dwlt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,6 +64,7 @@
       <workItem from="1664551318628" duration="2805000" />
       <workItem from="1664903383960" duration="3298000" />
       <workItem from="1665074657480" duration="5505000" />
+      <workItem from="1665157881581" duration="8000" />
     </task>
     <servers />
   </component>
