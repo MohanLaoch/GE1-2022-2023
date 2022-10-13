@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="11397f76-0ab9-4d6f-9853-6d5122e90b07" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GE1 Examples 2022/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GE1 Examples 2022/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GE1 Examples 2022/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GE1 Examples 2022/.idea/indexLayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GE1 Examples 2022/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GE1 Examples 2022/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fish.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fish.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Lab3.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Lab3.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2022.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2022.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +22,7 @@
       <option value="$PROJECT_DIR$/Assets/Cube1.cs" />
       <option value="$PROJECT_DIR$/Assets/RotateMe.cs" />
       <option value="$PROJECT_DIR$/Assets/Generator.cs" />
+      <option value="$PROJECT_DIR$/Assets/Fish.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="2FB4y1S0lILVa1EqCoMMbCQjLey" />
@@ -65,6 +71,7 @@
       <workItem from="1664903383960" duration="3298000" />
       <workItem from="1665074657480" duration="5505000" />
       <workItem from="1665157881581" duration="8000" />
+      <workItem from="1665683291936" duration="4152000" />
     </task>
     <servers />
   </component>
