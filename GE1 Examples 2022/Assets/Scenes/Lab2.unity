@@ -782,7 +782,8 @@ GameObject:
   - component: {fileID: 1178152843}
   - component: {fileID: 1178152842}
   - component: {fileID: 1178152841}
-  - component: {fileID: 1178152845}
+  - component: {fileID: 1178152848}
+  - component: {fileID: 1178152847}
   - component: {fileID: 1178152846}
   m_Layer: 0
   m_Name: tank
@@ -870,18 +871,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1178152845
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1178152840}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 08f74487c81e91344a9a8960d0f3983b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!54 &1178152846
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -898,6 +887,33 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1178152847
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1178152840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 895cc5c37c8493d4a955f6491ceacd23, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
+  rotSpeed: 30
+--- !u!114 &1178152848
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1178152840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e988b331fc5eb2e4eb9f6d1edaf5808b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
 --- !u!850595691 &1451369876
 LightingSettings:
   m_ObjectHideFlags: 0
