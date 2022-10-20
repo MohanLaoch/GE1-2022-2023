@@ -57,7 +57,13 @@ public class AITank : MonoBehaviour {
     // Update is called once per frame
     void Update () 
     {
-
+        Vector3 travelPoint = waypoints[current] - transform.position;
+        if (travelPoint.magnitude < 1)
+        {
+            current = (current + 1) % waypoints.Count;
+        }
+        travelPoint.Normalize();
+        transform.Translate(travelPoint * speed * Time.deltaTime, Space.World);
 
         // Task 3
         // Put code here to move the tank towards the next waypoint
