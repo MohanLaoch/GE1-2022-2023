@@ -6,7 +6,7 @@ using UnityEngine;
 public class AITank : MonoBehaviour {
 
     public float radius = 10;
-    public int numWaypoints = 5;
+    public int numWaypoints = 6;
     public int current = 0;
     List<Vector3> waypoints = new List<Vector3>();
     public float speed = 10;
