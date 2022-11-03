@@ -7,6 +7,9 @@ public class TankController : MonoBehaviour
 {
     private TankControls tc;
 
+    public GameObject bullet;
+    public Transform firePoint;
+
     void Awake()
     {
         tc = new TankControls();
@@ -63,6 +66,13 @@ public class TankController : MonoBehaviour
 
         Debug.Log(theta);
 
+        tc.Ground.Shoot.performed += ctx => Shoot();
+    }
+
+    private void Shoot()
+    {
+        Instantiate(bullet, firePoint.position, firePoint.rotation);
+        
 
     }
 
