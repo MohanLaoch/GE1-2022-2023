@@ -5,17 +5,24 @@ using UnityEngine;
 public class TurretController : MonoBehaviour
 {
     public Transform target;
-    public float range;
 
+    public float range;
     public float rotateSpeed;
 
+    public float fireRate;
+
     public string playerTag = "Player";
+
+    public GameObject turretBullet;
+    public Transform firePoint;
+
+    private bool canFire = true;
 
     // Start is called before the first frame update
     void Start()
     {
-        CapsuleCollider detect = GetComponent<CapsuleCollider>();
-        detect.radius = range * 2;
+        SphereCollider detect = GetComponent<SphereCollider>();
+        detect.radius = range / 2;
     }
 
     public void OnTriggerStay(Collider other)
@@ -35,11 +42,24 @@ public class TurretController : MonoBehaviour
         if (nearPlayer != null && shortestDistance <= range)
         {
             target = nearPlayer.transform;
+            if (canFire)
+            {
+                StartCoroutine(Shoot());
+            }
         }
         else
         {
             target = null;
         }
+    }
+
+    IEnumerator Shoot()
+    {
+        canFire = false;
+        float timeToNextShot = 1 / fireRate;
+        Instantiate(turretBullet, firePoint.position, firePoint.rotation);
+        yield return new WaitForSeconds(timeToNextShot);
+        canFire = true;
     }
 
     // Update is called once per frame

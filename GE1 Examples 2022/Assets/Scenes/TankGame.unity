@@ -553,7 +553,7 @@ GameObject:
   - component: {fileID: 787434374}
   - component: {fileID: 787434373}
   - component: {fileID: 787434372}
-  - component: {fileID: 787434371}
+  - component: {fileID: 787434377}
   m_Layer: 0
   m_Name: Turret
   m_TagString: Untagged
@@ -561,20 +561,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!136 &787434371
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 787434370}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  m_Radius: 10
-  m_Height: 0
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &787434372
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -590,7 +576,10 @@ MonoBehaviour:
   target: {fileID: 0}
   range: 7
   rotateSpeed: 10
+  fireRate: 1
   playerTag: Player
+  turretBullet: {fileID: 6158763066880187225, guid: ad01b57b1ccb25049a9caa1ea1262048, type: 3}
+  firePoint: {fileID: 1165799535}
 --- !u!65 &787434373
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -671,6 +660,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!135 &787434377
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 787434370}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &867282993
 GameObject:
   m_ObjectHideFlags: 0
