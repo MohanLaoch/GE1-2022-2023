@@ -29,21 +29,14 @@ public class CreateTower : MonoBehaviour
                 float x = Mathf.Cos(angle) * radius;
                 float z = Mathf.Sin(angle) * radius;
 
-                //GameObject cube = GameObject.Instantiate(cubePrefab);
+                Vector3 pos = transform.position + new Vector3(x, j, z);
 
-                //cube.transform.position = transform.TransformPoint(new Vector3(i, j, 0));
-
-                Vector3 pos = transform.position + new Vector3(x, 0, z);
                 float angleDegrees = angle * Mathf.Rad2Deg;
                 Quaternion rot = Quaternion.Euler(0, angleDegrees, 0);
+
                 Instantiate(cubePrefab, pos, rot);
 
-                 /* cube.transform.rotation = transform.rotation;
-                 //cube.GetComponent<Renderer>().material.color =
-                     //Color.HSVToRGB(i * j / (float)(width * height), 1.0f, 1.0f);
-                 Rigidbody rb = cube.GetComponent<Rigidbody>();
-                 rb.useGravity = false;
-                 cube.transform.parent = this.transform;*/
+                //cubePrefab.GetComponent<Renderer>().material.color = Color.HSVToRGB(i * j / (float)(numberOfCubes * height), 1.0f, 1.0f);
             }
         }
     }
